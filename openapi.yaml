@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+  title: AI Accountant API
+  version: '1.0'
+servers:
+  - url: https://your-backend-api-url.com
+paths:
+  /process-invoice:
+    post:
+      summary: Analyze invoice document
+      operationId: processInvoice
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Invoice data extracted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  invoice_date:
+                    type: string
+                  invoice_number:
+                    type: string
+                  total_amount:
+                    type: number
+                  billed_to:
+                    type: string
