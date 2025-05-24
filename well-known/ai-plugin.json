@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "AI Accountant Luciano",
+  "name_for_model": "ai_accountant_luciano",
+  "description_for_human": "Analyze invoices, extract financial data, and summarize transactions.",
+  "description_for_model": "Analyzes invoice or receipt documents, extracts structured data including date, amount, and vendor, and provides summaries or financial reports.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://nixonjaimetanhueco.github.io/ai-accountant-plugin/openapi.yaml"
+  },
+  "logo_url": "https://nixonjaimetanhueco.github.io/ai-accountant-plugin/logo.png",
+  "contact_email": "youremail@example.com",
+  "legal_info_url": "https://nixonjaimetanhueco.github.io/ai-accountant-plugin/legal"
+}
